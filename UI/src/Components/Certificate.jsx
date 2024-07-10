@@ -19,13 +19,13 @@ const Certificate = () => {
 
     fetchStudentDetails();
   }, [id]); // Ensure useEffect runs when `id` changes
-
+console.log(student)
   return (
     <>
       <div className="w-4/5 h-96 shadow-lg mx-auto mt-32 bg-white">
         <h1 className="text-2xl text-center">Kerala Blockchain Academy</h1><br/>
         <img src="/src/Image/Screenshot.png" alt="Certificate" className="mx-auto flex-none w-56" /><br/>
-        <p className="text-center">This is to certify that {student.name} has successfully completed</p>
+        <p className="text-center">This is to certify that {student.cname} has successfully completed {student.course}</p>
         <p className="text-center">with {student.grade} on {student.date}</p>
       </div>
     </>
