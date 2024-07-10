@@ -11,11 +11,12 @@ import CertificatePage from './Pages/CertificatePage'
 const App = () => {
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route path="/" element={<MainLayout/>}>
-        <Route path="/" element={<HomePage/>}/>
-        <Route path='/certi' element={<FormPage/>}/>
-        <Route path='/Print' element={<CertificatePage/>}/>
-      </Route>
+      <Route path='/' element={<MainLayout />}>
+          <Route path='/' element={<HomePage />} />
+          <Route path='/certificate/:id' element={<CertificatePage />} />
+          <Route path='/Certi' element={<FormPage />} />
+
+        </Route>
     ))
   return (
     <>

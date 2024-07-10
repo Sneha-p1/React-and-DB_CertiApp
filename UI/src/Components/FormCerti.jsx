@@ -3,6 +3,7 @@ import React from 'react'
 const FormCerti = () => {
   return (
     <>
+    <br/>
     <div class="box-content w-2/4 h-6/6 mb-12 shadow-lg mx-auto mt-28 pl-4 pt-4 bg-white">
         <form>
             <p class="text-xl font-medium">Issue New Certificate</p><br/>
